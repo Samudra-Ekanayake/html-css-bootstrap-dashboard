@@ -16,5 +16,14 @@ h2 {
 }
 
 .my_main {
-    overflow: auto !important; 
+    overflow: auto !important;
+}
+
+.my_hover:hover {
+    padding-left: 0;
+}
+
+
+.my_hover:hover {
+    background-color: lightgrey;
 }

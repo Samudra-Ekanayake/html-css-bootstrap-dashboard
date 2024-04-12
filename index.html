@@ -25,7 +25,7 @@
 </head>
 
 <body>
-
+    <!---------------Navbar------------------>
     <nav class="navbar navbar-expand bg-body-tertiary px-3" style="height: 7vh;">
         <a class="navbar-brand" href="#">
             <img src="img/logo.svg" alt="">
@@ -33,22 +33,22 @@
         <input class="form-control me-2 " type=" search" placeholder="Prova a cercare Lezioni di Laravel"
             aria-label="Search">
         <div class="d-flex gap-3">
-            <i class="d-none d-sm-inline fa-solid fa-list-ul"></i>
-            <i class="d-none d-sm-inline fa-solid fa-circle-question"></i>
-            <i class="d-none d-sm-inline fa-solid fa-ellipsis-vertical"></i>
-            <i class="fa-solid fa-bell" style="color: #ff8c00;"></i>
+            <i class="d-none d-sm-inline fa-solid fa-list-ul" style="color: gray;"></i>
+            <i class="d-none d-sm-inline fa-solid fa-circle-question" style="color: gray;"></i>
+            <i class="d-none d-sm-inline fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+            <i class="fa-solid fa-bell" style="color: orange;"></i>
         </div>
     </nav>
 
-
+    <!----------------Sidebar------------------>
     <div class="container-fluid d-flex bg-danger p-0" style="height: 93vh; width: 100vw;">
 
         <div class="my_sidebar bg-dark"
             style="color: white; height: 93vh; width: 12rem; background-image: url(img/sidebar-bg.png);">
             <ul>
-                <li><i class="fa-solid fa-house"></i><a href="link"> Home</a></li>
-                <li><i class="fa-sharp fa-solid fa-chart-simple"></i><a href="link"> Stats</a></li>
-                <li><i class="fa-solid fa-signal"></i><a href="link"> Signals</a></li>
+                <li class="my_hover"><i class="fa-solid fa-house"></i><a href="link"> Home</a></li>
+                <li class="my_hover"><i class="fa-sharp fa-solid fa-chart-simple"></i><a href="link"> Stats</a></li>
+                <li class="my_hover"><i class="fa-solid fa-signal"></i><a href="link"> Signals</a></li>
             </ul>
         </div>
 
@@ -100,7 +100,7 @@
             <!-------------------------------Main------------------------>
 
             <div class="row">
-                <div class="col-lg-8 col-sm-12 bg-success">
+                <div class="col-lg-8 col-sm-12 bg-body-tertiary">
                     <div class="row p-3">
                         <div class="col-lg-12 mb-4">
                             <div class="card rounded-0 bg-body-secondary">
@@ -111,72 +111,99 @@
                             <table class="table border border-top-0">
                                 <thead>
                                     <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                        <th scope="col">Handle</th>
+                                        <th scope="col">Nome</th>
+                                        <th scope="col">Data inizio</th>
+                                        <th scope="col">ROI</th>
+                                        <th scope="col">Stato</th>
+                                        <th scope="col">Azioni</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                        <td>@mdo</td>
+                                        <th scope="row"><img src="img/class-avatar.jpg" alt="" class="col-1"> Classe 75
+                                        </th>
+                                        <td>15 Feb 2021</td>
+                                        <td>20%</td>
+                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                        <td><i class="fa-solid fa-square-pen"></i> <i class="fa-solid fa-trash"></i>
+                                        </td>
+
                                     </tr>
                                     <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>@fat</td>
+                                        <th scope="row"><img src="img/class-avatar.jpg" alt="" class="col-1"> Classe 76
+                                        </th>
+                                        <td>15 Feb 2021</td>
+                                        <td>20%</td>
+                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                        <td><i class="fa-solid fa-square-pen"></i> <i class="fa-solid fa-trash"></i>
+                                        </td>
+
                                     </tr>
                                     <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
+                                        <th scope="row"><img src="img/class-avatar.jpg" alt="" class="col-1"> Classe 77
+                                        </th>
+                                        <td>15 Feb 2021</td>
+                                        <td>20%</td>
+                                        <td><span class="badge rounded-pill text-bg-warning">Process</span></td>
+                                        <td><i class="fa-solid fa-square-pen"></i> <i class="fa-solid fa-trash"></i>
+                                        </td>
+
                                     </tr>
                                     <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>@fat</td>
+                                        <th scope="row"><img src="img/class-avatar.jpg" alt="" class="col-1"> Classe 78
+                                        </th>
+                                        <td>15 Feb 2021</td>
+                                        <td>20%</td>
+                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                        <td><i class="fa-solid fa-square-pen"></i> <i class="fa-solid fa-trash"></i>
+                                        </td>
+
                                     </tr>
                                     <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>@fat</td>
+                                        <th scope="row"><img src="img/class-avatar.jpg" alt="" class="col-1"> Classe 79
+                                        </th>
+                                        <td>15 Feb 2021</td>
+                                        <td>20%</td>
+                                        <td><span class="badge rounded-pill text-bg-danger">Failed</span></td>
+                                        <td><i class="fa-solid fa-square-pen"></i> <i class="fa-solid fa-trash"></i>
+                                        </td>
+
                                     </tr>
                                     <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>@fat</td>
+                                        <th scope="row"><img src="img/class-avatar.jpg" alt="" class="col-1"> Classe 80
+                                        </th>
+                                        <td>15 Feb 2021</td>
+                                        <td>20%</td>
+                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                        <td><i class="fa-solid fa-square-pen"></i> <i class="fa-solid fa-trash"></i>
+                                        </td>
+
                                     </tr>
                                     <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>@fat</td>
+                                        <th scope="row"><img src="img/class-avatar.jpg" alt="" class="col-1"> Classe 81
+                                        </th>
+                                        <td>15 Feb 2021</td>
+                                        <td>20%</td>
+                                        <td><span class="badge rounded-pill text-bg-danger">Failed</span></td>
+                                        <td><i class="fa-solid fa-square-pen"></i> <i class="fa-solid fa-trash"></i>
+                                        </td>
+
                                     </tr>
                                     <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>@fat</td>
+                                        <th scope="row"><img src="img/class-avatar.jpg" alt="" class="col-1"> Classe 82
+                                        </th>
+                                        <td>15 Feb 2021</td>
+                                        <td>20%</td>
+                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                        <td><i class="fa-solid fa-square-pen"></i> <i class="fa-solid fa-trash"></i>
+                                        </td>
+
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+
+                        <!--------------F.A.Q.----------->
                         <div class="col-lg-12">
                             <div class="card rounded-0 bg-body-secondary">
                                 <div class="card-body">
@@ -239,13 +266,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-12 p-3 bg-secondary">
+                <!---------Main left------->
+                <div class="col-lg-4 col-sm-12 p-3 bg-body-tertiary">
                     <div class="card rounded-0 bg-body-secondary">
                         <div class="card-body">
                             <h3>Todo</h3>
                         </div>
                     </div>
-                    <div class="col-12 p-2 bg-white">
+                    <div class="col-12 p-2 bg-white mb-4 border">
                         <ul class="list-group">
                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                 <div class="form-check">
@@ -276,9 +304,24 @@
                             </li>
                         </ul>
                     </div>
+                    <!-----------------Stats--------------->
+                    <div class="col-12 bg-white p-2 border">
+                        <img src="img/stats.jpeg" alt="" class="col-12 border border-bottom-0">
+                        <div class="border border-top-0">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h5>Utenti attivi</h5>
+                                    <p>Lista degli utenti attivi nell'ultimo mese</p>
+                                </li>
+                                <li class="list-group-item">Gennaio: 1200</li>
+                                <li class="list-group-item">Febbraio: 800</li>
+                                <li class="list-group-item">Marzo: 1500</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
 
 
